@@ -3,8 +3,10 @@
 
 \documentclass[line,overlapped]{res} 
 % the margin option causes section titles to appear to the left of body text 
-%\textwidth=5.2in % increase textwidth to get smaller right margin
-\resumewidth=6.4in % increase textwidth to get smaller right margin
+\textwidth=6.6in % increase textwidth to get smaller right margin
+\resumewidth=7.0in % increase textwidth to get smaller right margin
+%\sectionwidth=5.0in
+\sectionskip=0.1in
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 
@@ -12,8 +14,8 @@
  
 \name{Jordan A. Lewis} % the \\[12pt] adds a blank line after name
  
-\address{jalewis@uchicago.edu \hspace{1.6in} Current: 1151 E. 61th St. Apt. 1E, Chicago, IL 60637}
-\address{(917) 974-7144 \hspace{2.18in} Permananent: 6 Warren Place, Brooklyn, NY 11201}
+\address{jalewis@uchicago.edu \hspace{2.3in} Current: 1151 E. 61th St. Apt. 1E, Chicago, IL 60637}
+\address{(917) 974-7144 \hspace{2.81in} Permananent: 6 Warren Place, Brooklyn, NY 11201}
 
  
 \newsectionwidth{.2in}
@@ -22,17 +24,24 @@
  
 \section{Education} 
 {\sl Bachelor of Science,} Computer Science, The University of Chicago \hfill expected 2011\\
-{\sl Associate of Arts,} Bard College\hfill 2007\\
+{\sl Associate of Arts,} Bard College\hfill 2007
 % Probably don't need high school diploma along with the above on here
-%Bard High School Early College \hfill 2007
+%Bard High School Early College \hfill 2008
 
 \section{Work Experience}
-{\bf Sys. Admin.,} Computation Institute, The University of Chicago \hfill Aug. 2008-Present
+{\bf Sys. Admin.,} Computation Institute, The University of Chicago \hfill Aug. 2008-Sep. 2009
 \begin{itemize} \itemsep -2pt %reduce space between items
     \item Maintained 2 clusters of around 200 Linux servers each across 2 physical sites; helped develop a software suite to ease cluster error recovery and management
     \item Assembled and cabled new compute nodes and storage servers; diagnosed, maintained and replaced failed hardware components
     \item Administered multiple Cyclades console servers and APC PDUs and UPSs
+\end{itemize} \itemsep -2pt
+\vspace{-10pt}
+{\bf Software Developer,} CSPP, The University of Chicago \hfill Jun. 2009-Aug. 2009
+\begin{itemize}
+    \item Designed and implemented a SQLite database to track information relating to incoming students, incorporating multiple disparate and incompatible sources of data into a unified schema
+    \item Worked with staff members to discover the best workflow for the particulars of this application, and created a simple web interface to match that workflow.
 \end{itemize}
+\vspace{-10pt}
 
 {\bf Software Developer,} Econnectix, Chicago, IL\hfill Jan. 2008-Apr. 2009
 \begin{itemize} \itemsep -2pt % reduce space between items
@@ -40,12 +49,14 @@
     \item Designed and implemented ``support tunnel'' instant tech-support system from scratch in three weeks, allowing customers to get help directly from a device's user interface
     \item Collaborated on a major refactoring of a storage volume management and server state configuration system for a fibre channel SCSI storage device
 \end{itemize}
+\vspace{-10pt}
 
-{\bf Software Developer,} Vim, Google Summer of Code \hfill Summer 2008
+{\bf Software Developer,} Vim, Google Summer of Code, Volunteer \hfill Summer 2008-Present
 \begin{itemize} \itemsep -2pt
     \item Designed and implemented undo tree persistence, one of the Vim community's most requested feature additions (undos/redos automatically saved upon closing and restored upon reopening a file)
-    \item Remotely collaborated with project lead and other Vim developers
+    \item Continued to support the feature in spite of difficulties getting it pushed upstream, continued development via a separate channel
 \end{itemize}
+\vspace{-10pt}
 
 {\bf Tech Support,} Lower East Side Girls Club, NY, NY \hfill Feb. 2006-Sep. 2007
 \begin{itemize} \itemsep -2pt
@@ -53,21 +64,36 @@
     \item Simplified and improved the organization's ethernet network topology
     \item Maintained and upgraded hardware and software
 \end{itemize}
-\section{Leadership Activities} 
-{\bf Intern,} National Park Service Youth Conservation Corps, NY, NY \hfill Jun.-Sep. 2007
+
+%%{\bf Intern,} National Park Service Youth Conservation Corps, NY, NY \hfill Jun.-Sep. 2007
+%%\begin{itemize} \itemsep -2pt
+%%    \item Collaborated with Governor's Island managerial and grounds staff on physical maintenance and development tasks
+%%    \item Presented information and historical background about the National Parks Service and Governor's Island to other young adults
+%%\end{itemize}
+%%{\bf Counselor and Trip Leader,} Tanager Lodge, Merrill, NY \hfill Jun.-Aug. 2006
+%%\begin{itemize} \itemsep -2pt
+%%    \item Responsible for safety and well-being of four 8-10-year-olds during a 7 week wilderness summer program
+%%    \item Co-led multi-day wilderness backpacking trips for groups of 8-14-year-olds
+%%\end{itemize}
+\section{Academic Projects}
+{\bf Optimizing compiler for an SML-like language} The Univ. of Chicago, CMSC 22610/20 \hfill Winter-Spring 2009\\
+{\bf Simple RDBMS,} The University of Chicago, CMSC 23500 \hfill Spring 2009
 \begin{itemize} \itemsep -2pt
-    \item Collaborated with Governor's Island managerial and grounds staff on physical maintenance and development tasks
-    \item Presented information and historical background about the National Parks Service and Governor's Island to other young adults
+    \item Collaborated with the class to build a simple RDBMS in C from the ground up
+    \item Included a B-Tree backend, a database virtual machine, a SQL interpreter to translate SQL statements into database machine instructions on the fly, and a simple shell to interact with the system
 \end{itemize}
-{\bf Counselor and Trip Leader,} Tanager Lodge, Merrill, NY \hfill Jun.-Aug. 2006
+\vspace{-10pt}
+{\bf TCP-like implementation; IP router} The University of Chicago, CMSC 23300 \hfill Autumn 2008
 \begin{itemize} \itemsep -2pt
-    \item Responsible for safety and well-being of four 8-10-year-olds during a 7 week wilderness summer program
-    \item Co-led multi-day wilderness backpacking trips for groups of 8-14-year-olds
+    \item Collaborated with a partner to implement a TCP-like reliable transport protocol called STCP on top of a simulated unreliable network layer
+    \item Collaborated again to implement a functional IP router with proper support for ARP requests, ICMP interactions, and routing directly over Ethernet packets
 \end{itemize}
+
+
 
 % Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
 \section{Skills}
-   \begin{tabular}{l p{10in}}
+   \begin{tabular}{l p{4in}}
    {\sl Languages:}&C, C++, Python, SML, Perl, Scheme, Bash, lex, yacc, \LaTeX\\
    {\sl Web \& Network:} & Apache, mod\_python, xmlrpc-c, OpenVPN\\
    {\sl Tools: } & Vim, RCS, CVS, Subversion, git, SQLite\\
