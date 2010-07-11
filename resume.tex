@@ -10,11 +10,13 @@
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
 \begin{document} 
  
 \name{Jordan A. Lewis} % the \\[12pt] adds a blank line after name
  
-\address{jalewis@uchicago.edu \hspace{2.3in} Current: 1151 E. 61th St. Apt. 1E, Chicago, IL 60637}
+\address{jordanthelewis@gmail.com \hspace{1.63in} Current: 5709 S. Kimbark Ave. Apt. 3, Chicago, IL 60637}
 \address{(917) 974-7144 \hspace{2.81in} Permanent: 6 Warren Place, Brooklyn, NY 11201}
 
  
@@ -29,6 +31,13 @@
 %Bard High School Early College \hfill 2008
 
 \section{Work Experience}
+{\bf Intern Software Developer,} The Manticore Project, The University of Chicago \hfill Jun. 2009-Present
+\begin{itemize} \itemsep -2pt
+    \item Continued development on and maintained an Objective-C++/Cocoa log file visualization program for Manticore, a functional parallel programming language and compiler
+\end{itemize}
+
+\vspace{-10pt}
+
 {\bf Sys. Admin.,} Computation Institute, The University of Chicago \hfill Aug. 2008-Sep. 2009
 \begin{itemize} \itemsep -2pt %reduce space between items
     \item Maintained 2 clusters of around 200 Linux servers each across 2 physical sites; helped develop a software suite to ease cluster error recovery and management
@@ -37,7 +46,7 @@
 \end{itemize} \itemsep -2pt
 \vspace{-10pt}
 {\bf Software Developer,} CSPP, The University of Chicago \hfill Jun. 2009-Aug. 2009
-\begin{itemize}
+\begin{itemize} \itemsep -2pt
     \item Designed and implemented a SQLite database to track information relating to incoming students, incorporating multiple disparate and incompatible sources of data into a unified schema
     \item Worked with staff members to discover the best workflow for the particulars of this application, and created a simple web interface to match that workflow.
 \end{itemize}
@@ -51,19 +60,18 @@
 \end{itemize}
 \vspace{-10pt}
 
-{\bf Software Developer,} Vim, Google Summer of Code, Volunteer \hfill Summer 2008-Present
+{\bf Software Developer,} Vim, Google Summer of Code, \hfill Summer 2008-Present
 \begin{itemize} \itemsep -2pt
-    \item Designed and implemented undo tree persistence, one of the Vim community's most requested feature additions (undos/redos automatically saved upon closing and restored upon reopening a file)
-    \item Continued to support the feature in spite of difficulties getting it pushed upstream, continued development via a separate channel
+    \item Designed and implemented undo tree persistence, one of the Vim community's most requested feature additions (undos/redos automatically saved upon closing and restored upon reopening a file)\footnotemark[2]
+    \item Continued to support the feature in spite of difficulties getting it pushed upstream, continued development via a separate channel until eventual upstream inclusion
 \end{itemize}
-\vspace{-10pt}
 
-{\bf Tech Support,} Lower East Side Girls Club, NY, NY \hfill Feb. 2006-Sep. 2007
-\begin{itemize} \itemsep -2pt
-    \item Developed infrastructure for automated backups of computers in a small network
-    \item Simplified and improved the organization's ethernet network topology
-    \item Maintained and upgraded hardware and software
-\end{itemize}
+%%{\bf Tech Support,} Lower East Side Girls Club, NY, NY \hfill Feb. 2006-Sep. 2007
+%%\begin{itemize} \itemsep -2pt
+%%    \item Developed infrastructure for automated backups of computers in a small network
+%%    \item Simplified and improved the organization's ethernet network topology
+%%    \item Maintained and upgraded hardware and software
+%%\end{itemize}
 
 %%{\bf Intern,} National Park Service Youth Conservation Corps, NY, NY \hfill Jun.-Sep. 2007
 %%\begin{itemize} \itemsep -2pt
@@ -77,29 +85,29 @@
 %%\end{itemize}
 \section{Academic Projects}
 %{\bf Optimizing compiler for an SML-like language} The Univ. of Chicago, CMSC 22610/20 \hfill Winter-Spring 2009\\
-{\bf Prototype SML-like Module System} The Univ. of Chicago, CMSC 33600 \hfill Winter 2010\\
-{\bf Simple RDBMS,} The University of Chicago, CMSC 23500 \hfill Spring 2009
+{\bf Tensor Rundown, a multiplayer 3D racing game}\footnotemark[2] The Univ. of Chicago, CMSC 23800 \hfill Spring 2010\\
+{\bf Prototype SML-like Module System}\footnotemark[2] The Univ. of Chicago, CMSC 33600 \hfill Winter 2010\\
+{\bf Simple MIPS Simulator}\footnotemark[2] The University of Chicago, CMSC 22200 \hfill Autumn 2009\\
+{\bf Simple RDBMS,}\footnotemark[2] The University of Chicago, CMSC 23500 \hfill Spring 2009
 \begin{itemize} \itemsep -2pt
-    \item Collaborated with the class to build a simple RDBMS in C from the ground up
-    \item Included a B-Tree backend, a database virtual machine, a SQL interpreter to translate SQL statements into database machine instructions on the fly, and a simple shell to interact with the system
+    \item Collaborated with the class to build a simple RDBMS in C from the ground up, including a B-Tree backend, a database virtual machine, a SQL-to-VM code generator, and a simple shell to interact with the system
 \end{itemize}
 \vspace{-10pt}
-{\bf TCP-like implementation; IP router} The University of Chicago, CMSC 23300 \hfill Autumn 2008
+{\bf TCP-like implementation; IP router}\footnotemark[2] The University of Chicago, CMSC 23300 \hfill Autumn 2008
 \begin{itemize} \itemsep -2pt
-    \item Collaborated with a partner to implement a TCP-like reliable transport protocol called STCP on top of a simulated unreliable network layer
-    \item Collaborated again to implement a functional IP router with proper support for ARP requests, ICMP interactions, and routing directly over Ethernet packets
+    \item In a two-person team, implemented a TCP-like reliable transport protocol called STCP on top of a simulated unreliable network layer, and an IP router with proper support for ARP, ICMP, and routing directly over Ethernet packets
 \end{itemize}
-
 
 
 % Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
 \section{Skills}
    \begin{tabular}{l p{4in}}
-   {\sl Languages:}&C, C++, Python, SML, Perl, Scheme, Bash, lex, yacc, \LaTeX\\
-   {\sl Web \& Network:} & Apache, mod\_python, xmlrpc-c, OpenVPN\\
-   {\sl Tools: } & Vim, RCS, CVS, Subversion, git, SQLite\\
-   {\sl Operating Systems:} & Linux (Debian, Scientific/Enterprise, Arch, Gentoo), OS X\\
+   {\sl Languages:}&/(Objective-)?C(++)?/, SML, Python, Scheme, Bash, GLSL\\
+   {\sl Graphical Toolkits:}&Cocoa, OpenGL\\
+   {\sl Tools: } & Vim, gdb, RCS, CVS, Subversion, git, SQLite, lex, yacc\\
+   {\sl OS:} & Linux (Arch, Debian, Gentoo, Scientific, Ubuntu), OS X\\
  \end{tabular}
 
-\end{resume} 
-\end{document} 
+\end{resume}
+\footnotetext[2]{Source code available at http://github.com/jordanlewis/, or upon request}
+\end{document}
