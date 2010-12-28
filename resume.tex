@@ -3,12 +3,19 @@
 
 \documentclass[line,overlapped]{res} 
 % the margin option causes section titles to appear to the left of body text 
+%\addtolength{\hoffset}{-1in}
+%\hoffset=-1in
 \textwidth=6.6in % increase textwidth to get smaller right margin
 \resumewidth=7.0in % increase textwidth to get smaller right margin
 %\sectionwidth=5.0in
 \sectionskip=0.1in
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
+
+% moves doc over to the left
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\evensidemargin}{-.25in}
+
 
 \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
