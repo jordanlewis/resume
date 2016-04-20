@@ -31,15 +31,23 @@
 %\sectionfont{\sl}
 \begin{resume}
 
-\section{Education}
-{\sl Bachelor of Science,} Computer Science, The University of Chicago \hfill 2011\\
-%{\sl Associate of Arts,} Bard College\hfill 2007
-% Probably don't need high school diploma along with the above on here
-%Bard High School Early College \hfill 2008
-
 \section{Work Experience}
-{\bf Senior Software Engineer,} Knewton \hfill Sep. 2011-Present\\
-{\bf Intern Systems Engineer,} RethinkDB \hfill December 2010\\
+{\bf Senior Software Engineer,} Knewton \hfill Feb. 2013-Present
+\begin{itemize} \itemsep -2pt
+    \item Led and completed a large-scale redesign of the in-house framework supporting the company's real-time production machine-learning model infrastructure, resulting in a 50\% cost reduction and improved latency, throughput and overall system simplicity over 6 months
+    \item Created audit and management system for model parameters learned offline
+    \item Work with data scientists to profile, instrument and optimize critical model code
+    \item Design, implement and maintain a central model-running service along with architecture of supporting backend databases, caches, auditable logs and other metrics and instrumentation
+\end{itemize}
+\vspace{-10pt}
+{\bf Software Engineer,} Knewton \hfill Sep. 2011-Feb. 2013
+\begin{itemize} \itemsep -2pt
+    \item Responsible for design, implementation, maintenance and optimization of core backend database services in a Java-based, AWS-hosted microservice-style distributed system.
+    \item Created a scalable versioned graph database using Cassandra as its backing store
+    \item Created a service to manage, persist and serve a complex set of domain objects for internal use.
+\end{itemize}
+\vspace{-10pt}
+{\bf Intern Software Engineer,} RethinkDB \hfill December 2010\\
 {\bf Homework/Lab grader,} CMSC 15400/15100, The University of Chicago \hfill Spring, Autumn 2010\\
 {\bf Intern Software Developer,} The Manticore Project, The University of Chicago \hfill Summer 2010
 \begin{itemize} \itemsep -2pt
@@ -48,28 +56,26 @@
 
 \vspace{-10pt}
 
-{\bf Sys. Admin.,} Computation Institute, The University of Chicago \hfill Aug. 2008-Sep. 2009
-\begin{itemize} \itemsep -2pt %reduce space between items
-    \item Maintained 2 clusters of around 200 Linux servers each across 2 physical sites; helped develop a software suite to ease cluster error recovery and management
-    %\item Assembled and cabled new compute nodes and storage servers; diagnosed, maintained and replaced failed hardware components
-    %\item Administered multiple Cyclades console servers and APC PDUs and UPSs
-\end{itemize} \itemsep -2pt
-\vspace{-10pt}
-{\bf Software Developer,} CSPP, The University of Chicago \hfill Jun. 2009-Aug. 2009
-\begin{itemize} \itemsep -2pt
-    \item Designed and implemented a SQLite database to track information relating to incoming students, incorporating multiple disparate and incompatible sources of data into a unified schema
-    %\item Worked with staff members to discover the best workflow for the particulars of this application, and created a simple web interface to match that workflow.
-\end{itemize}
-\vspace{-10pt}
-
-{\bf Software Developer,} Econnectix, Chicago, IL\hfill Jan. 2008-Apr. 2009
-\begin{itemize} \itemsep -2pt % reduce space between items
-    \item Designed and implemented a system health tracking and management program to detect and handle dangerous physical conditions for a high-availability embedded device
-    \item Designed and implemented ``support tunnel'' instant tech-support system from scratch in three weeks, allowing customers to get help directly from a device's user interface
-    \item Collaborated on a major refactoring of a storage volume management and server state configuration system for a fibre channel SCSI storage device
-\end{itemize}
-\vspace{-10pt}
-
+{\bf Sys. Admin.,} Computation Institute, The University of Chicago \hfill Aug. 2008-Sep. 2009\\
+%%\begin{itemize} \itemsep -2pt %reduce space between items
+%%    \item Maintained 2 clusters of around 200 Linux servers each across 2 physical sites; helped develop a software suite to ease cluster error recovery and management
+%%    %\item Assembled and cabled new compute nodes and storage servers; diagnosed, maintained and replaced failed hardware components
+%%    %\item Administered multiple Cyclades console servers and APC PDUs and UPSs
+%%\end{itemize}
+%%\vspace{-10pt}
+%%{\bf Software Developer,} CSPP, The University of Chicago \hfill Jun. 2009-Aug. 2009\\
+%%\begin{itemize} \itemsep -2pt
+%%    \item Designed and implemented a SQLite database to track information relating to incoming students, incorporating multiple disparate and incompatible sources of data into a unified schema
+%%    %\item Worked with staff members to discover the best workflow for the particulars of this application, and created a simple web interface to match that workflow.
+%%\end{itemize}
+%%\vspace{-10pt}
+{\bf Software Developer,} Econnectix, Chicago, IL\hfill Jan. 2008-Apr. 2009\\
+%%\begin{itemize} \itemsep -2pt % reduce space between items
+%%    \item Designed and implemented a system health tracking and management program to detect and handle dangerous physical conditions for a high-availability embedded device
+%%    \item Designed and implemented ``support tunnel'' instant tech-support system from scratch in three weeks, allowing customers to get help directly from a device's user interface
+%%    \item Collaborated on a major refactoring of a storage volume management and server state configuration system for a fibre channel SCSI storage device
+%%\end{itemize}
+%%\vspace{-10pt}
 {\bf Software Developer,} Vim, Google Summer of Code, \hfill Summer 2008-Autumn 2010
 \begin{itemize} \itemsep -2pt
     \item Designed and implemented undo tree persistence, one of the Vim community's most requested feature additions (undos/redos automatically saved upon closing and restored upon reopening a file)\footnotemark[2]
@@ -93,8 +99,15 @@
 %%    \item Responsible for safety and well-being of four 8-10-year-olds during a 7 week wilderness summer program
 %%    \item Co-led multi-day wilderness backpacking trips for groups of 8-14-year-olds
 %%\end{itemize}
-\section{Academic Projects}
+\section{Education}
+{\sl Bachelor of Science,} Computer Science, The University of Chicago \hfill 2011
+%{\sl Associate of Arts,} Bard College\hfill 2007
+% Probably don't need high school diploma along with the above on here
+%Bard High School Early College \hfill 2008
 %{\bf Optimizing compiler for an SML-like language} The Univ. of Chicago, CMSC 22610/20 \hfill Winter-Spring 2009\\
+\section{Other Projects}
+{\bf Lisp implementation in Factor}\footnotemark[2] \hfill April 2015\\
+{\bf Persistent union-find implementation in Clojure}\footnotemark[2] \hfill January 2013\\
 {\bf Tensor Rundown, a multiplayer 3D racing game}\footnotemark[2] The Univ. of Chicago, CMSC 23800 \hfill Spring 2010\\
 {\bf Prototype SML-like Module System}\footnotemark[2] The Univ. of Chicago, CMSC 33600 \hfill Winter 2010\\
 {\bf Simple MIPS Simulator}\footnotemark[2] The University of Chicago, CMSC 22200 \hfill Autumn 2009\\
@@ -112,10 +125,9 @@
 % Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
 \section{Skills}
    \begin{tabular}{l p{4in}}
-   {\sl Languages:}&/(Objective-)?C(++)?/, SML, Python, Scheme, Bash, GLSL\\
-   {\sl Graphical Toolkits:}&Cocoa, OpenGL\\
-   {\sl Tools: } & Vim, gdb, CVS, Subversion, git, SQLite, lex, yacc\\
-   {\sl OS:} & Linux (Arch, Debian, Gentoo, Scientific, Ubuntu), OS X\\
+   {\sl Languages:}&Java, Python, Clojure, C/++, shell, Scala, Golang, OCaml, Factor\\
+   {\sl Systems:}&Cassandra, Kafka, AWS, Redis, Zookeeper, Mesos/Marathon, SQL\\
+   {\sl Tools:}&Vim, git, Docker, Splunk, Graphite \\
  \end{tabular}
 
 \end{resume}
